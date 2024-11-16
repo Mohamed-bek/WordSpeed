@@ -1,0 +1,239 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #eeeeee;
+}
+h1 {
+  width: 100%;
+  padding: 19px;
+  background-color: #1a38fa;
+  color: white;
+  font-size: 35px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.container {
+  width: 900px;
+  margin: 10px auto;
+  background-color: white;
+  margin-top: 160px;
+  border-top: 2px solid #1a38fa;
+  box-shadow: 0px 2px 15px #777, 0px 2px 30px #777;
+}
+.container .start {
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  padding: 0px 0;
+  margin-bottom: 10px;
+  border: 2px solid #1a38fa;
+}
+.container .start .level {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.container .start .level > p {
+  width: 100%;
+  font-size: 19px;
+  font-weight: bold;
+  height: calc(100% / 2);
+  line-height: 35px;
+}
+.container .start .level div {
+  width: 100%;
+  display: flex;
+  height: calc(100% / 2);
+}
+.container .start .level div span {
+  width: calc(100% / 3);
+  height: 100%;
+  color: white;
+  font-size: 18px;
+  line-height: 35px;
+  cursor: pointer;
+}
+.container .start .level div span:first-child {
+  background-color: green;
+}
+.container .start .level div span:nth-child(2) {
+  background-color: #1a38fa;
+}
+.container .start .level div span:last-child {
+  background-color: red;
+}
+.container .start button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #1a38fa;
+  cursor: pointer;
+  color: white;
+}
+.container .para {
+  width: 100%;
+  padding: 20px 20px;
+  background-color: #eeeeee;
+  font-size: 17px;
+  text-align: center;
+}
+.container .wordchoose {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  color: #1a38fa;
+  font-size: 55px;
+  font-weight: 600;
+  user-select: none;
+}
+.container input[type="text"] {
+  width: 100%;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #1a38fa;
+  border: 2px solid #1a38fa;
+  margin-bottom: 20px;
+}
+.container .scoretime {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #1a38fa;
+}
+.container .scoretime span {
+  color: #1a38fa;
+  font-weight: bold;
+}
+div.finish {
+  width: 100%;
+  background-color: #1a38fa;
+  font-size: 30px;
+  color: white;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  /* display: none; */
+}
+
+.level > .levels {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.level > .levels > span {
+  width: calc(100% / 3);
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 0;
+  font-size: 1.3rem;
+  color: black;
+  font-weight: bold;
+}
+.level > .levels > span:first-of-type {
+  background-color: yellow;
+}
+.level > .levels > span:nth-of-type(2) {
+  background-color: green;
+}
+.level > .levels > span:last-of-type {
+  background-color: red;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 35px 70px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  background: #1a38fa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.modal-content button:hover {
+  background: #0f2bba;
+}
+.levelChoose {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.7rem;
+}
