@@ -50,6 +50,10 @@ body {
   height: 100vh;
   overflow: hidden;
   background-color: #eeeeee;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 h1 {
   width: 100%;
@@ -62,11 +66,11 @@ h1 {
 }
 .container {
   width: 900px;
-  margin: 10px auto;
+  transform: translateY(-60px);
   background-color: white;
-  margin-top: 160px;
   border-top: 2px solid #1a38fa;
   box-shadow: 0px 2px 15px #777, 0px 2px 30px #777;
+  padding-bottom: 20px;
 }
 .container .start {
   width: 100%;
@@ -137,13 +141,15 @@ h1 {
   user-select: none;
 }
 .container input[type="text"] {
-  width: 100%;
+  width: 60%;
+  display: block;
+  margin: 0 auto 20px;
   padding: 10px 20px;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.3rem;
+  font-weight: bolder;
   color: #1a38fa;
   border: 2px solid #1a38fa;
-  margin-bottom: 20px;
 }
 .container .scoretime {
   width: 100%;
@@ -155,7 +161,8 @@ h1 {
 }
 .container .scoretime span {
   color: #1a38fa;
-  font-weight: bold;
+  font-weight: bolder;
+  font-size: 1.3rem;
 }
 div.finish {
   width: 100%;
